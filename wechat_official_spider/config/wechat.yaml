@@ -1,0 +1,64 @@
+headers:
+  cookie:
+    "mm_lang=zh_CN;slave_user=gh_b13219864c21;ua_id=8cmqPk1k2Zww7A4UAAAAABQILvDWfUXroWRAoh0lJ-Q=;xid=3f6f844dcf1e78fb5f26b856ac313278;slave_sid=XzNua2hZczV0S2J0SXhxM0JQRzFSU1Nkblc5VjQ4TElvSUIzdV9qUFE5TkJUcWpEME9MRllzeGFqSF9fMUpqNUdRRW1nT2YxSTdSaUR1UzhxNllLSnFRWlE4MUVJdk90dHdud1B0Y3Fsdk1Uc1BQSzIwMUxxS2Q4T21ZQ09FdkxhUUNwWldVVk4wWTlFZjVQ;uuid=4b85d5ee1d9a95bfa6ba426cdb67fcab;data_ticket=YaFekJypKMaSlf3wwTuVdeYCM+RIWNK93xvBtWDIEw31lAeNCB734iqjXX4aRUwj;bizuin=3884757833;data_bizuin=3884757833;slave_bizuin=3884757833;wxuin=78355784130681;rand_info=CAESIKzK+sAzTvDCuKyYtciVNHJb+XdSldRnrzkZuXU8w1H4;"
+  user-agent:
+    "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+
+payload:
+  # 公众号请求参数
+  action: 'list_ex'
+  begin: '0'  # 当前请求页数
+  count: '5'  # 计数
+  fakeid: 'Mzg3NjY3MDE3MA=='
+  type: '9'
+  token: '1874316427' # token 会话会过期，需要改进
+  lang: 'zh_CN'
+  f: 'json'
+  ajax: '1' #显示几天的文章
+max_page: 3  # 用于每一个公众号爬取多少页 默认为3
+url: "https://mp.weixin.qq.com/"
+
+wechat_official_accounts:
+  "数据安全推进计划":
+    name: "数据安全推进计划"
+    fakeid: "Mzg3NjY3MDE3MA=="
+  "数据工匠俱乐部":
+    name: "数据工匠俱乐部"
+    fakeid: "MzU5ODQ1OTI4NQ=="
+  "谈数据":
+    name: "谈数据"
+    fakeid: "MzI1NzYwNTMzNw=="
+  "数据经济评论":
+    name: "数据经济评论"
+    fakeid: "MzU2OTUwODY1MA=="
+  "数据课堂":
+    name: "数据课堂"
+    fakeid: "MzkyMDE5ODYwMw=="
+  "CxO卓越圈":
+    name: "CxO卓越圈"
+    fakeid: "MjM5NTM3MzQ2Mw=="
+  "阿里研究院":
+    name: "阿里研究院"
+    fakeid: "MjM5NTg0NDE1Mw=="
+  "CDO研习社":
+    name: "CDO研习社"
+    fakeid: "MjM5MzcwOTkyMw=="
+  "首席数字官":
+    name: "首席数字官"
+    fakeid: "MzA5MjIzODA4NA=="
+  "数字金融123":
+    name: "数字金融123"
+    fakeid: "MzUyODA4MTAzNw=="
+  "紫荆数字经济产业研究":
+    name: "紫荆数字经济产业研究"
+    fakeid: "Mzg2ODY5NzgwMQ=="
+
+mail:
+  on: "false"  # 用于控制是否开启邮件推送 true/false
+  mail_host: 'smtp.263.net'
+  mail_user: 'xxx'
+  mail_pass: 'xxx'
+  sent_mail:
+    - "xxxx"
+
+
